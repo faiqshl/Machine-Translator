@@ -1,0 +1,129 @@
+
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Website Title */
+.container{
+	padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #ffffff, #a7eaa4, #78c3e6, #f37e7e, #c1f364, #c5cccc, #91eb7b);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.container-heading{
+    margin: 0;
+}
+
+.heading_font{
+    color: #ff0000;
+	font-family: 'Yatra One', cursive;
+	font-size: 27px;
+}
+
+.description p{
+    font-style: italic;
+    font-size: 14px;
+    margin: 3px 0 0;
+}
+
+/* Text Area */
+.ml-container{
+	flex: 1 0 auto;
+}
+
+.message-box{
+    margin-bottom: 20px;
+	border: 2px solid #000000;
+	font-size: 15px;
+}
+
+.choice-lang{
+	font-size: 15px;
+	font-weight: bold;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box-lang{
+	background: #3fd4da;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.box-lang:hover{
+	color: #ff0000;
+	border: 2px solid #ff0000;
+}
+
+/* Predict Button */
+.button{
+    background: #3fd4da;
+    border: 2px solid #000000;
+    border-radius: 1000px;
+    padding: 10px 25px;
+    color: #ffffff;
+    display: inline-block;
+    font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.button:hover{
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.results{
+	padding: 30px 0 0;
+	flex: 1 0 auto;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.predict{
+	border: 2px solid #000000;
+	font-size: 15px;
+}
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background: linear-gradient(45deg, #ffffff, #78c3e6, #f37e7e, #c1f364, #c4cccc, #91eb7b);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.footer-desc{
+	margin: 0;
+	font-size: 12px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}

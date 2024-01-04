@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Language Translator</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for(filename='styles.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Language Translator</span></h2>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{url_for('predict')}}" method="POST">
+        		<textarea class='message-box' name="message" rows="10" cols="50" placeholder="Enter Text Here"></textarea><br/>
+        		<p class="'choice-lang">Choice Language:
+                <select class="box-lang" name="Language">
+                    <option value="indonesian">indonesian</option>
+                    <option value="english">english</option>
+                    <option value="arabic">arabic</option>
+                    <option value="japanese">japanese</option>
+                    <option value="chinese">chinese</option>
+                    <option value="korean">korean</option>
+                    <option value="russian">russian</option>
+                    <option value="french">french</option>
+                    <option value="germany">germany</option>
+                    <option value="spain">spain</option>
+                </select>
+                </p><br>
+                <input type="button" class="submit" value="Translate">
+            </form>
+    	</div>
+
+    	<!--results-->
+    	<div class="results">
+            <h3>Translate : </h3>
+            <textarea class='predict' rows="5" cols="50">{{predict}}</textarea>
+    	</div>
+
+        <!-- Footer -->
+        <div class='footer'>
+            <p class='footer-desc'>2022@Copyright by faiqshl</p>
+        </div>
+    </body>
+</html>
